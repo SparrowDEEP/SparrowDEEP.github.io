@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate | Hope Horizon</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f6fb;
+}
+
+.navbar {
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.logo {
+    width: 45px;
+    margin-right: 12px;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0f47af;
+}
+
+.container {
+    max-width: 600px;
+    margin: 80px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0f47af;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #007a3d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005f2e;
+}
+
+/* Hidden donation section */
+#redirectSection {
+    display: none;
+    text-align: center;
+}
+
+.redirect-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 25px;
+    background: #0f47af;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.redirect-btn:hover {
+    background: #09357f;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <img src="images/logo.png" class="logo" alt="Hope Horizons Logo">
+    <div class="brand">Hope Horizon</div>
+</div>
+
+<div class="container">
+
+    <!-- FORM SECTION -->
+    <div id="formSection">
+        <h1>Make a Donation</h1>
+
+        <form onsubmit="handleSubmit(event)">
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Email Address</label>
+            <input type="email" required>
+
+            <label>Donation Amount</label>
+            <select required>
+                <option value="">Select Amount</option>
+                <option>$25</option>
+                <option>$50</option>
+                <option>$100</option>
+                <option>$250</option>
+                <option>Other</option>
+            </select>
+
+            <button type="submit">Continue to Donate</button>
+        </form>
+    </div>
+
+    <!-- REDIRECT SECTION -->
+    <div id="redirectSection">
+        <h1>Almost There! 💚</h1>
+        <p>
+            Thank you for your willingness to support South Sudan.
+            Click below to complete your secure donation. It will take you to a another page where you can finalize your contribution and make a real difference in the lives of those in need.
+        </p>
+
+        <!-- 🔽 REPLACE THIS LINK -->
+        <a href="https://support.savethechildren.org/site/Donation2?mfc_pref=T&idb=620072441&df_id=1620&1620.donation=form1&1620_donation=form1&mfc_pref=T" 
+           target="_blank" 
+           class="redirect-btn">
+           Complete Donation
+        </a>
+    </div>
+
+</div>
+
+<script>
+function handleSubmit(event) {
+    event.preventDefault();
+
+    // Hide form
+    document.getElementById("formSection").style.display = "none";
+
+    // Show redirect section
+    document.getElementById("redirectSection").style.display = "block";
+}
+</script>
+
+</body>
+</html>
+<a href="index.html" class="back-home">
+  ← Back to Home
+</a>
+<style>/* Back to Home Button */
+.back-home {
+  display: inline-block;
+  margin: 40px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1e3a8a;
+  border: 2px solid #1e3a8a;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.back-home:hover {
+  background: #1e3a8a;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
+}</style>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hope Horizon | Our Campaign Flyers</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f2f6fb;
+        color: #333;
+    }
+
+    /* Top Navbar */
+    .navbar {
+        background: white;
+        padding: 15px 40px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    .brand-name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0f47af;
+        letter-spacing: 1px;
+    }
+
+    /* Container */
+    .container {
+        max-width: 1200px;
+        margin: 60px auto;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #0f47af;
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    /* Flyer Grid */
+    .flyer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .flyer {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .flyer:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .flyer img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .flyer-content {
+        padding: 20px;
+    }
+
+    .flyer-content h3 {
+        margin-top: 0;
+        color: #007a3d;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: #0f47af;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #09357f;
+    }
+
+    footer {
+        background: #535457;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 60px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+        .flyer-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .navbar {
+            padding: 15px 20px;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- Simple Navbar -->
+<div class="navbar">
+    <img src="images/logo.png" class="logo" alt="Hope Horizons Logo">
+    <div class="brand-name">Hope Horizon</div>
+</div>
+
+<div class="container">
+    <h2>Our Contact Information</h2>
+
+    <div class="flyer-grid">
+
+        <!-- Flyer 1 -->
+        <div class="flyer">
+            <img src="images/flyer1.png" alt="Clean Water Campaign Flyer">
+            <div class="flyer-content">
+                <h3></h3>
+                <p>
+                    
+                </p>
+                
+            </div>
+        </div>
+
+        <!-- Flyer 2 -->
+        <div class="flyer">
+            <img src="images/flyer2.png" alt="Education Support Campaign Flyer">
+            <div class="flyer-content">
+                <h3></h3>
+                <p>
+                    
+                </p>
+                <a href="index.html" class="btn">Back to home page</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 Hope Horizon | Building Brighter Futures
+</footer>
+
+</body>
+</html>
